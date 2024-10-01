@@ -1,0 +1,130 @@
+/*David Fariña Morena */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;/*para cambiar la letra de toda la pagina*/
+    color: #333;/*color de la letra de toda la pagina*/
+    background-image: url(../img/fondoh.png);
+    background-size: cover; /*la imagen coge el tamaño de la pagina*/
+    background-attachment: fixed;/*para que la imagen no se mueva con la pagina*/
+ 
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro transparente */
+    padding: 15px;
+}
+#logo {
+    display: inline;/*he puesto el div en linea para que pueda float el boton y no se baje del header*/
+}
+
+#logo img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo del main */
+main {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco transparente */
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.titulo h1 {
+    font-size: 2.5em;/*tamaño de la letra*/
+    color: #ff5722;
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+.titulo hr {
+    border: none;
+    height: 2px;
+    background-color: #ff5722;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.texto {
+    font-size: 1.2em;
+    color: #333;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+}
+
+.texto p {/*Separa el contenido para alinear sus bordes izquierdo y derecho con los bordes izquierdo y derecho del cuadro de línea*/
+    text-align: justify;
+}
+
+.negrita {
+    font-weight: bolder;
+}
+
+.imagenestx {
+    height: 300px;
+    width: 700px;
+    margin-left: 200px;
+    border: solid 2px black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.colort {
+    background-color: yellow;
+}
+
+h1 {
+    color: #ff5722;
+    margin-left: 10px; 
+}
+table {
+    width: 100%;
+    border-collapse: collapse;/*hace que los bordes no se repitan*/
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;    
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+thead th {
+    border-bottom: 2px solid #ddd;/*edito el borde de abajo*/
+}
+input{
+   margin:8px;
+}
+#formulario{
+    margin-left: 300px;
+    height: 50%;
+    width: 50%;
+    border: solid 2px #ddd;
+    border-radius: 30px;
+    padding: 30px;
+}
+ul{
+    list-style-type: disclosure-closed;/*Hacemos que la lista este ordenada por un simbolo de play*/
+}
+a{
+    text-decoration: none;
+    color: black;
+}

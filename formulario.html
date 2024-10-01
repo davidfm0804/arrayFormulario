@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--David Fariña Morena 2DAW-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+        <header><!-- cabecera con enlaces al formulario y al index-->
+            <div id="logo"> 
+                <img id="casa" src="img/logo.png"/>
+            </div>
+        </header>
+        <main><!--Cuerpo donde se ubica el contenido-->
+            <div id="formulario"><!--div para el formulario-->
+                <h2>Formulario de Registro</h2>
+                <form action="recoger.php" method="get"><!--formulario para introducir los datos de una persona-->
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre"><br/><!--input tipo texto para introducir el nombre-->
+
+                    <label>Apellidos:</label>
+                    <input type="text" name="apellidos"><br/><!--input tipo texto para introducir los apellidos-->
+
+                    <label>Género:</label>
+                    <select name="genero"><!--un select con option para elegir el genero-->
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select><br/>
+
+                    <label>Edad:</label>
+                    <input type="number" name="edad"><br/><!--un input tipo number para introducir la edad-->
+                    <input type="radio" name="clase" value="1DAW">
+                    <label>1DAW</label>
+                    <input type="radio" name="clase" value="2DAW">
+                    <label>2DAW</label>
+                    <input type="radio" name="clase" value="1SMR">
+                    <label>1SMR</label>
+                    <input type="radio" name="clase" value="2SMR">
+                    <label>2SMR</label><br/> 
+                    <label>Deportes:</label><br/>
+                    <input type="checkbox" name="deportes[]" value ="Futbol">Futbol<!--Sino ponemos el corchete coge el ultimo valor asignado-->
+                    <input type="checkbox" name="deportes[]" value = "Baloncesto" >Baloncesto
+                    <input type="checkbox" name="deportes[]" value = "Voleybol" >Voleybol<br/>
+                    <label>Fecha de Nacimiento:</label>
+                    <input type="date"name="fecha_nacimiento"><br/><!--un input tipo date para introducir la edad-->
+                    <input type="checkbox" name="terminos">
+                    <label>Acepta los terminos y condiciones</label><br/>
+                    <input type="submit" name="enviar"value="Enviar"><!--un input tipo submit para un boton de enviar-->
+                </form>
+            </div>
+        </main>
+</body>
+</html>
