@@ -9,22 +9,30 @@
     <h1>Datos Recogidos</h1>
     <?php
        if (!empty($_GET['nombre'])){
-        echo "<p>".$_GET['nombre']."</p>";
+        echo "<p>Nombre: ".$_GET['nombre']."</p>";
        }
-        echo "<p>".$_GET['apellidos']."</p>";
-        echo "<p>".$_GET['genero']."</p>";
-        echo "<p>".$_GET['edad']."</p>";
+       if (!empty($_GET['apellidos'])){
+        echo "<p>Apellidos: ".$_GET['apellidos']."</p>";
+        }
+        if (!empty($_GET['genero'])){
+        echo "<p>Genero: ".$_GET['genero']."</p>";
+        }
+        if (!empty($_GET['edad'])){
+        echo "<p>Edad: ".$_GET['edad']."</p>";
+        }
         if(isset($GET_['clase'])){
-            echo "<p>".$_GET['clase']."</p>";
+            echo "<p>Clase: ".$_GET['clase']."</p>";
         }
         if (isset($_GET['deportes'])){
         foreach($_GET['deportes'] as $indice =>$valor){
-            echo "<p>".$valor."</p>";
+            echo "<p>Deporte: ".$valor."</p>";
         }}
         //echo "<p>".$_GET['deportes']."</p>";
-        echo "<p>".$_GET['fecha_nacimiento']."</p>";
+        if (!empty($_GET['fecha_nacimiento'])){
+        echo "<p>Fecha de nacimiento: ".$_GET['fecha_nacimiento']."</p>";
+        }
         if (isset($_GET['terminos'])){
-         echo "<p>".$_GET['terminos']."</p>";
+         echo "<p>Terminos: ".$_GET['terminos']."</p>";
         }
     ?>
 </body>
